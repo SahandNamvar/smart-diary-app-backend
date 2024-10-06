@@ -18,7 +18,8 @@ exports.generateResponse = async ({ text_entry, sentiment }) => {
 
         // Create a prompt based on the text entry and sentiment
         const prompt = `
-        Based on the following text and sentiment, generate a thoughtful and empathetic response.
+        Based on the following journal entry text and sentiment, generate a thoughtful and empathetic response.
+        The reponse should be 1-2 sentences long and provide support or encouragement.
 
         Text: "${text_entry}"
         Sentiment Score: ${sentiment.score}
