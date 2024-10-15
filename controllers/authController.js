@@ -55,6 +55,10 @@ exports.register = async (req, res) => {
         let user = await User.findOne({ email });
         if (user) return res.status(400).json({ message: 'User already exists' });
 
+        // Check if the username is already taken
+        user = await User.findOne({ username });
+        if (user) return res.status(400).json({ message: 'Username is already taken' });
+
         // Create a new user
         user = new User({ username, email, password }); // Password is hashed in the User model
         await user.save();
