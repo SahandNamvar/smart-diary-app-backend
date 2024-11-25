@@ -72,7 +72,7 @@
 
 ### Follow these steps to set up the backend on your local machine:
 
-1. Clone the repository: `git clone https://github.com/SahandNamvar/smart-diary-app-frontend.git`
+1. Clone the repository: `git clone https://github.com/SahandNamvar/smart-diary-app-backend.git`
 
 2. Navigate to the backend directory: `cd smart-diary-app/backend`
 
